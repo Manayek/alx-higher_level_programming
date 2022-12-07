@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-def complex_delete(a_dictionary, value):
-    schl = []
-    for key, valu in a_dictionary.items():
-        if valu == value:
-            schl.append(key)
-            for key in schl:
-                del a_dictionary[key]
-                return(a_dictionary)
+def complex_delete(my_dict, value):
+    targets = []
+    for key, key_value in my_dict.items():
+        if key_value is value:
+            targets.append(key)
+            for x in targets:
+                del my_dict[x]
+                return(my_dict)
