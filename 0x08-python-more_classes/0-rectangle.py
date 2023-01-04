@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-
-'''0-rectangle: Python Funtion that defines an empty class'''
+# 0-rectangle.py
+# Manaye kerebn  <manayekerebn7@gmail.com
+"""Defines a Rectangle class."""
 
 
 class Rectangle:
-    '''Create an empty Rectangle type'''
+    """Represent a rectangle."""
     pass
