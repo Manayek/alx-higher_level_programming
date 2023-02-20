@@ -1,7 +1,5 @@
--- displays teh average temp by city
--- ordered by temperature desc
+-- Converts `hbtn_0c_0` database to UTF8 in MySQL Server.
 
-SELECT city, AVG(value) as avg_temp
-FROM temperatures
-GROUP BY city
-ORDER BY avg_temp DESC;
+USE hbtn_0c_0;
+ALTER DATABASE hbtn_0c_0 CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+ALTER TABLE first_table CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
