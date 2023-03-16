@@ -1,15 +1,8 @@
 #!/usr/bin/node
-const { argv } = require('process');
+// prints the addition of 2 integers
 
-/**
-* add - adds two numbers
-* Return: sum of two numbers
-*
-/
 function add (a, b) {
-a = parseInt(a);
-b = parseInt(b);
-return (a + b);
+  return parseInt(a) + parseInt(b);
 }
 
-console.log(add(argv[2], argv[3]));
+console.log(add(process.argv[2], process.argv[3]));
