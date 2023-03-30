@@ -1,14 +1,16 @@
 #!/usr/bin/python3
-""" contains function that finds a peak in a list
-of unsorted integers.
-"""
-
-
 def find_peak(list_of_integers):
-"""Function finds peak of list passed in"""
-if type(list_of_integers) != list:
+""" Python function to find peak number"""
+le = len(list_of_integers)
+if le == 0:
 return
-if len(list_of_integers) == 0:
-return None
-list_of_integers.sort(reverse=True)
-return list_of_integers[0]
+m = le // 2
+pivot = list_of_integers[m]
+left = list_of_integers[m - 1]
+
+if (m == le - 1 or pivot >= list_of_integers[m + 1]) and\
+(m == 0 or pivot >= left):
+return pivot
+elif m != le - 1 and list_of_integers[m + 1] > pivot:
+return (find_peak(list_of_integers[m + 1:]))
+return (find_peak(list_of_integers[:m]))
