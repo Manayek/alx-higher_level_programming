@@ -1,13 +1,9 @@
 #!/usr/bin/python3
-""" Creates an empty class called Square
-"""
 class Square:
-    """ Empty class with size private attribute
-    """
+    """type class square"""
     def __init__(self, size):
+        """Init the square class
+        Args:
+        param1: size is the type int attribute to make it private
         """
-                Instantiation with size
-                Args:
-                    size: size of the square
-                    """
-                    self.__size = size
+        self.__size = 
